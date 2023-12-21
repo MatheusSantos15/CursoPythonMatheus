@@ -1,9 +1,12 @@
-v = input('Digite uma variavel qualquer: ')
-print('O tipo dessa variavel é: ', type(v))
-print('A variável tem somente espaços? ', v.isspace())
-print('A variável é numérica? ', v.isnumeric())
-print('A variavel é alfabética? ', v.isalpha())
-print('A variavel é alfanúmerica? ', v.isalnum())
-print('A variavel está em CAPS? ', v.isupper())
-print('A variavel está em minusculas? ', v.islower())
-print(('A variavel está captalizada? ', v.istitle()))
+v = str(input('Digite algo: '))
+print(f''' 
+    É Alpha númerico? {v.isalnum()},
+    É alpha? {v.isalpha()},
+    É Minuscula? {v.islower()},
+    É maiuscula? {v.isupper()},
+    Está capitalizada? {v.istitle()},
+    É Decimal? {v.isdecimal()},
+    É numérica? {v.isnumeric()},
+    É espaço? {v.isspace()},
+    Tipo: {type(v)}
+      ''')
